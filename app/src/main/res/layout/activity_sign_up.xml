@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:background="#212121"
+    android:layout_gravity="center"
+    tools:context=".SignUp">
+
+    <Button
+        android:layout_height="60dp"
+        android:id="@+id/regForwardButton"
+        android:layout_width="100dp"
+        android:layout_marginTop="20dp"
+        android:text="SignUp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/editPhone"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/regEditUserName"
+        android:textColor="#FFFFFF"
+        android:cursorVisible="false"
+        android:layout_height="45dp"
+        android:layout_below="@+id/regFirstName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Last Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:id="@+id/regLastName"
+        android:cursorVisible="false"
+        android:layout_below="@+id/regEditUserName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/regEditLastName"
+        android:textColor="#FFFFFF"
+        android:cursorVisible="false"
+        android:layout_height="45dp"
+        android:layout_below="@+id/regLastName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Welcome to MavWallet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:id="@+id/regWelcome"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:text="First Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:cursorVisible="false"
+        android:id="@+id/regFirstName"
+        android:layout_below="@+id/regWelcome"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/regEditPassword"
+        android:textColor="#FFFFFF"
+        android:layout_height="45dp"
+        android:layout_below="@+id/regPassword"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/regEditConPassword"
+        android:textColor="#FFFFFF"
+        android:layout_height="45dp"
+        android:layout_below="@+id/regConPassword"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="Confirm Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:id="@+id/regConPassword"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/regEditPassword"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:id="@+id/regPassword"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/regEditLastName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Phone"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/regEditConPassword"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/regPhone" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/editPhone"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:layout_below="@+id/regPhone"
+        android:layout_toEndOf="@+id/regLastName" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/regSpinner"
+        android:spinnerMode="dropdown"
+        style="@style/spinner"
+        android:layout_alignBottom="@+id/editPhone"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/editPhone"
+        android:layout_toStartOf="@+id/editPhone" />
+
+</RelativeLayout>

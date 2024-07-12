@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#212121"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_gravity="center"
+    tools:context=".VerificationActivity">
+
+    <Button
+        android:layout_height="60dp"
+        android:id="@+id/SMSForwardButton"
+        android:layout_width="110dp"
+        android:text="Confirm"
+        android:layout_below="@id/text1"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Enter The Confirmation Code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:id="@+id/enterCodeText"
+        android:layout_marginTop="23dp"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_marginTop="25dp"
+        android:cursorVisible="false"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:layout_height="45dp"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/enterCodeText"
+        android:layout_alignParentStart="true"
+        android:id="@+id/editSMS" />
+
+    <TextView
+        android:text="Cannot receive? Click "
+        android:textColor="#FFFFFF"
+        android:textSize="13sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="80dp"
+        android:id="@+id/text1"
+        android:layout_below="@+id/editSMS"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text=" here"
+        android:textColor="#25A6B5"
+        android:textSize="13sp"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/resendLink"
+        android:gravity="center"
+        android:paddingRight="1dp"
+        android:layout_alignBaseline="@+id/text1"
+        android:layout_alignBottom="@+id/text1"
+        android:layout_toEndOf="@+id/text1" />
+
+    <TextView
+        android:text=" to resend"
+        android:textColor="#FFFFFF"
+        android:textSize="13sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text2"
+        android:layout_alignBaseline="@+id/resendLink"
+        android:layout_alignBottom="@+id/resendLink"
+        android:layout_toEndOf="@+id/resendLink" />
+</RelativeLayout>
